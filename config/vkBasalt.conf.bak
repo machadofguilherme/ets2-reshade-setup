@@ -1,0 +1,26 @@
+# Guardado so de referencia - abandonado por causa de winevulkan nao
+# enumerar implicit layers corretamente sob Flatpak Steam + Proton.
+# Ver README.md secao "Por que ReShade manual, e nao vkBasalt".
+
+effects = smaa:Curves:DPX:Levels:Colourfulness:Clarity:AdaptiveSharpen:LumaSharpen
+
+reshadeTexturePath = "/opt/rbgw-reshade/Textures"
+reshadeIncludePath = "/opt/rbgw-reshade/Shaders"
+
+Curves = /opt/rbgw-reshade-patched/Shaders/Curves.fx
+DPX = /opt/rbgw-reshade-patched/Shaders/DPX.fx
+Levels = /opt/rbgw-reshade-patched/Shaders/Levels.fx
+Colourfulness = /opt/rbgw-reshade-patched/Shaders/Colourfulness.fx
+Clarity = /opt/rbgw-reshade-patched/Shaders/Clarity.fx
+AdaptiveSharpen = /opt/rbgw-reshade-patched/Shaders/AdaptiveSharpen.fx
+LumaSharpen = /opt/rbgw-reshade-patched/Shaders/LumaSharpen.fx
+
+depthCapture = off
+toggleKey = Home
+enableOnLaunch = True
+
+smaaEdgeDetection = luma
+smaaThreshold = 0.055
+smaaMaxSearchSteps = 64
+smaaMaxSearchStepsDiag = 16
+smaaCornerRounding = 25
